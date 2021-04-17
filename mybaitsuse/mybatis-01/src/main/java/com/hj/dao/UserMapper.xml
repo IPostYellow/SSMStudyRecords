@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--namespace=绑定一个对应的Dao/Mapper接口-->
-<mapper namespace="com.hj.dao.UserDao">
+<mapper namespace="com.hj.dao.UserMapper">
     <!--select查询语句，这里的id为接口里实现方法的方法名-->
     <select id="getUserList" resultType="com.hj.pojo.User">
     select * from mybatis.user;
