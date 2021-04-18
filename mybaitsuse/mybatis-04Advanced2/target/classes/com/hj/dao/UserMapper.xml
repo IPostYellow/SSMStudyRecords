@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace=绑定一个对应的Dao/Mapper接口-->
+<mapper namespace="com.hj.dao.UserMapper">
+    <!--select查询语句，这里的id为接口里实现方法的方法名-->
+    <select id="getUserList" resultType="user">
+    select * from mybatis.user;
+  </select>
+    <select id="getUserById" parameterType="int" resultType="com.hj.pojo.User">
+        select * from mybatis.user where id=#{id};
+    </select>
+
+    <!--对象中的属性可以直接取出来,这里的user.id user.name user.pwd可以直接简化掉user.-->
+    <insert id="insertUser" parameterType="com.hj.pojo.User">
+        insert into mybatis.user (id,name,pwd) values (#{id},#{name},#{pwd});
+--         replace into mybatis.user (id,name,pwd) values (#{id},#{name},#{pwd});
+--     insert into mybatis.user (id,name,pwd) values (#{id},#{name},#{pwd}) on duplicate key update name=#{name},pwd=#{pwd};
+--     insert ignore into mybatis.user (id,name,pwd) values (#{id},#{name},#{pwd});
+    </insert>
+
+    <update id="updateUser" parameterType="com.hj.pojo.User">
+        update mybatis.user set name = #{name},pwd=#{pwd} where id=#{id};
+    </update>
+    <delete id="deleteUser" parameterType="int">
+        delete from mybatis.user where id=#{id};
+    </delete>
+</mapper>
