@@ -8,4 +8,4 @@ mybatis-03和mybatis-04教程MyBatis学习（三）之MyBatis 进阶：https://b
 <br>
 mybatis-05 resultmap映射教程：https://blog.csdn.net/Doraemon_Nobita/article/details/115895622?spm=1001.2014.3001.5501
 <br>
-mybatis-06 日志的使用教程：
+mybatis-06 日志的使用教程：https://editor.csdn.net/md/?articleId=115955748
