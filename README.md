@@ -1,4 +1,9 @@
 # 记录自己学习mybatis的代码
+## 运行环境
+* JDK1.8
+* maven 3.8.1
+* mysql 5.7
+## 代码对应教程
 <br>
 mybatis-01教程MyBatis学习（一）之初探MyBatis大体结构与简单实现：https://blog.csdn.net/Doraemon_Nobita/article/details/115795402
 <br>
