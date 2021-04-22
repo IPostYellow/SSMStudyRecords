@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--configuration核心配置文件-->
+<configuration>
+    <!--引入外部配置文件-->
+    <properties resource="db.properties">
+        <property name="user" value="root"/>
+        <property name="password" value="123456"/>
+    </properties>
+
+    <!--可以给实体类起别名-->
+    <typeAliases>
+        <!--自定义别名-->
+        <typeAlias type="com.hj.pojo.User" alias="User"/>
+        <!--扫描这个包，默认别名为类的小写名（但是大写也可以）-->
+        <package name="com.hj.pojo"/>
+    </typeAliases>
+
+
+    <!--
+        plugins在配置文件中的位置必须符合要求，否则会报错，顺序如下:
+        properties?, settings?,
+        typeAliases?, typeHandlers?,
+        objectFactory?,objectWrapperFactory?,
+        plugins?,
+        environments?, databaseIdProvider?, mappers?
+    -->
+    <plugins>
+        <!-- com.github.pagehelper为PageHelper类所在包名 -->
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+            <!-- 使用下面的方式配置参数，后面会有所有的参数介绍 -->
+            <property name="reasonable" value="true"/>
+        </plugin>
+    </plugins>
+
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <!--mysql 8.x 是com.mysql.cj.jdbc.Driver-->
+                <property name="driver" value="${driver}"/>
+                <!--连接数据库的时候有个url，然后具体到mybatis这个数据库，然后使用ssl，编码utf8等等设置-->
+                <property name="url"
+                          value="${url}"/>
+                <property name="username" value="${user}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+        <environment id="test">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <!--mysql 8.x 是com.mysql.cj.jdbc.Driver-->
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <!--连接数据库的时候有个url，然后具体到mybatis这个数据库，然后使用ssl，编码utf8等等设置-->
+                <property name="url"
+                          value="jdbc:mysql://localhost:3306/mybatis?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8"/>
+                <property name="username" value="root"/>
+                <property name="password" value="root"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+
+    <!--每一个Mapper.xml都需要在Mybatis核心配置文件中注册-->
+    <mappers>
+        <mapper resource="com/hj/dao/UserMapper.xml"/>
+    </mappers>
+
+
+</configuration>
