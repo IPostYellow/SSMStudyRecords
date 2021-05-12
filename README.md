@@ -17,3 +17,13 @@ mybatis-05 resultmap映射教程：https://blog.csdn.net/Doraemon_Nobita/article
 mybatis-06 日志的使用教程：https://editor.csdn.net/md/?articleId=115955748
 <br>
 mybatis-07 分页功能的使用教程：https://blog.csdn.net/Doraemon_Nobita/article/details/116020595
+
+# 对于Spring的学习
+## 运行环境
+* JDK1.8
+* maven 3.8.1
+* springframework 5.2.0.RELEASE
+
+## 代码对应教程
+<br>
+spring-01和spring-02 IOC容器的理解：https://blog.csdn.net/Doraemon_Nobita/article/details/116655236
