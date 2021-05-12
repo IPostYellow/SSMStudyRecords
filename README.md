@@ -1,4 +1,5 @@
-# 记录自己学习mybatis的代码
+# 记录自己学习SSM的代码
+# 对于mybatis的学习
 ## 运行环境
 * JDK1.8
 * maven 3.8.1
