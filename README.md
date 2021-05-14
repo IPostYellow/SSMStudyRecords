@@ -27,3 +27,7 @@ mybatis-07 分页功能的使用教程：https://blog.csdn.net/Doraemon_Nobita/a
 ## 代码对应教程
 <br>
 spring-01和spring-02 IOC容器的理解：https://blog.csdn.net/Doraemon_Nobita/article/details/116655236
+<br>
+spring-03 Spring容器是如何创建对象的：https://blog.csdn.net/Doraemon_Nobita/article/details/116757735
+<br>
+spring-04 Spring常用配置内容：https://blog.csdn.net/Doraemon_Nobita/article/details/116804011?spm=1001.2014.3001.5501
