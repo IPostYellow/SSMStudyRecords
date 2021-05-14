@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="from2User" class="com.hj.pojo.User">
+        <constructor-arg name="name" value="来自2的对象"/>
+    </bean>
+
+    <bean id="user" class="com.hj.pojo.User">
+        <!--构造函数参数名称 name="参数名称"-->
+        <constructor-arg name="name" value="Spring2"/>
+    </bean>
+</beans>
