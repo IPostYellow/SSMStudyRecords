@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="cat" class="com.hj.pojo.Cat"/>
+    <bean id="dog" class="com.hj.pojo.Dog"/>
+    <!--byName自动装配:会自动在容器上下文里查找，找到和对象的set方法后面的值对应的bean的id-->
+    <bean id="person" class="com.hj.pojo.Person" autowire="byName">
+        <property name="name" value="张三"/>
+    </bean>
+    <!--byType自动装配:会自动在容器上下文里查找，找到和对象的属性类型相同的bean，
+    注意，这个类型必须全局唯一，否则会报错。byType找的bean可以不需要id，因为是跟着类型来的-->
+    <bean id="person2" class="com.hj.pojo.Person" autowire="byType">
+        <property name="name" value="张三"/>
+    </bean>
+
+</beans>

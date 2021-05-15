@@ -2,104 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcefcf3b-1340-41a4-b28a-888a96090f7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-01-ioc/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-01-ioc/spring-01-ioc.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-01-ioc/src/main/java/com/hj/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-01-ioc/src/main/java/com/hj/dao/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-01-ioc/src/main/java/com/hj/dao/UserDaoOracleImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-01-ioc/src/main/java/com/hj/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-01-ioc/src/main/java/com/hj/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-01-ioc/src/test/java/MyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-02-hellospring/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-02-hellospring/src/main/java/com/hj/pojo/Hello.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-02-hellospring/src/main/resources/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-02-hellospring/src/test/java/MyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-03-ioc2/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-03-ioc2/spring-03-ioc2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-03-ioc2/src/main/java/com/hj/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-03-ioc2/src/main/resources/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-03-ioc2/src/test/java/MyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-04-Configuration/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-04-Configuration/spring-04-Configuration.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-04-Configuration/src/main/java/com/hj/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-04-Configuration/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-04-Configuration/src/main/resources/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-04-Configuration/src/main/resources/beans2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-04-Configuration/src/test/java/MyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-05-DI/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-05-DI/spring-05-DI.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-05-DI/src/main/java/com/hj/pojo/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-05-DI/src/main/java/com/hj/pojo/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-05-DI/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-05-DI/src/test/java/MyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-06-DI(p&amp;c)/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-06-DI(p&amp;c)/src/main/java/com/hj/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-06-DI(p&amp;c)/src/main/resources/UserBean.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-06-DI(p&amp;c)/src/test/java/MyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybaitsuse/mybatis-07Paging/mybatis-07Paging.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybaitsuse/mybatis-07Paging/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybaitsuse/mybatis-07Paging/src/main/java/com/hj/dao/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybaitsuse/mybatis-07Paging/src/main/java/com/hj/dao/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybaitsuse/mybatis-07Paging/src/main/java/com/hj/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybaitsuse/mybatis-07Paging/src/main/java/com/hj/utils/MybatisUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybaitsuse/mybatis-07Paging/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybaitsuse/mybatis-07Paging/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybaitsuse/mybatis-07Paging/src/test/java/com/hj/dao/UserMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybaitsuse/mybatis-08Annotations/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybaitsuse/mybatis-08Annotations/src/main/java/com/hj/dao/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybaitsuse/mybatis-08Annotations/src/main/java/com/hj/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybaitsuse/mybatis-08Annotations/src/main/java/com/hj/utils/MybatisUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybaitsuse/mybatis-08Annotations/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybaitsuse/mybatis-08Annotations/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybaitsuse/mybatis-08Annotations/src/test/java/com/hj/dao/UserMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/class/com/hj/CglibMaleSinger$$EnhancerByCGLIB$$7e3cd35d.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/class/net/sf/cglib/core/MethodWrapper$MethodWrapperKey$$KeyFactoryByCGLIB$$d45e49f7.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/class/net/sf/cglib/proxy/Enhancer$EnhancerKey$$KeyFactoryByCGLIB$$7fb24d72.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/com/sun/proxy/$Proxy0.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/factory-pattern/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/factory-pattern/src/main/java/com/hj/AbstractFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/factory-pattern/src/main/java/com/hj/BMW.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/factory-pattern/src/main/java/com/hj/BMWBike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/factory-pattern/src/main/java/com/hj/BMWFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/factory-pattern/src/main/java/com/hj/BMWSuperFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/factory-pattern/src/main/java/com/hj/Benz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/factory-pattern/src/main/java/com/hj/BenzBike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/factory-pattern/src/main/java/com/hj/BenzFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/factory-pattern/src/main/java/com/hj/Bike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/factory-pattern/src/main/java/com/hj/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/factory-pattern/src/main/java/com/hj/CarFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/factory-pattern/src/main/java/com/hj/CarFactory2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/factory-pattern/src/main/java/com/hj/Honda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/factory-pattern/src/main/java/com/hj/HondaBike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/factory-pattern/src/main/java/com/hj/HondaFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/factory-pattern/src/test/java/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/factory-pattern/src/test/java/Client2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/factory-pattern/src/test/java/Client3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/proxy-pattern/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/proxy-pattern/proxy-pattern.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/proxy-pattern/src/main/java/com/hj/Agent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/proxy-pattern/src/main/java/com/hj/Agent2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/proxy-pattern/src/main/java/com/hj/CglibMaleSinger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/proxy-pattern/src/main/java/com/hj/MaleSinger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/proxy-pattern/src/main/java/com/hj/MaleSinger2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/proxy-pattern/src/main/java/com/hj/Singer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/proxy-pattern/src/main/java/com/hj/Singer2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/proxy-pattern/src/test/java/CglibClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/proxy-pattern/src/test/java/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/proxy-pattern/src/test/java/Client2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../设计模式/设计模式.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybaitsuse/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybaitsuse/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybaitsuse/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybaitsuse/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-07-AutoWired/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-07-AutoWired/src/main/java/com/hj/pojo/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-07-AutoWired/src/main/java/com/hj/pojo/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-07-AutoWired/src/main/java/com/hj/pojo/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-07-AutoWired/src/main/resources/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-07-AutoWired/src/test/java/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,14 +74,7 @@
       <recent name="com.hj.pojo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MyTest (5)">
-    <configuration name="MyTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <module name="spring-02-hellospring" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.MyTest">
     <configuration name="MyTest (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyTest" />
       <module name="spring-03-ioc2" />
@@ -200,13 +103,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyTest" />
+      <module name="spring-07-AutoWired" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyTest" />
         <item itemvalue="Application.MyTest (5)" />
         <item itemvalue="Application.MyTest (4)" />
         <item itemvalue="Application.MyTest (3)" />
         <item itemvalue="Application.MyTest (2)" />
-        <item itemvalue="Application.MyTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +131,7 @@
       <option name="presentableId" value="Default" />
       <updated>1620715822008</updated>
       <workItem from="1620715824022" duration="6388000" />
-      <workItem from="1620893816752" duration="11480000" />
+      <workItem from="1620893816752" duration="14563000" />
     </task>
     <servers />
   </component>
@@ -236,26 +146,26 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="1129" y="218" key="#Project_Structure/0.0.2048.1112@0.0.2048.1112" timestamp="1620716007257" />
-    <state x="1332" y="275" key="#com.intellij.ide.util.MemberChooser" timestamp="1620997530154">
+    <state x="1332" y="275" key="#com.intellij.ide.util.MemberChooser" timestamp="1621056967196">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="1332" y="275" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1112@0.0.2048.1112" timestamp="1620997530154" />
-    <state width="977" height="304" key="GridCell.Tab.0.bottom" timestamp="1620997737270">
+    <state x="1332" y="275" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1112@0.0.2048.1112" timestamp="1621056967196" />
+    <state width="977" height="304" key="GridCell.Tab.0.bottom" timestamp="1621057821675">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="977" height="304" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1620997737270" />
-    <state width="977" height="304" key="GridCell.Tab.0.center" timestamp="1620997737270">
+    <state width="977" height="304" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1621057821675" />
+    <state width="977" height="304" key="GridCell.Tab.0.center" timestamp="1621057821675">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="977" height="304" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1620997737270" />
-    <state width="977" height="304" key="GridCell.Tab.0.left" timestamp="1620997737270">
+    <state width="977" height="304" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1621057821675" />
+    <state width="977" height="304" key="GridCell.Tab.0.left" timestamp="1621057821675">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="977" height="304" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1620997737270" />
-    <state width="977" height="304" key="GridCell.Tab.0.right" timestamp="1620997737270">
+    <state width="977" height="304" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1621057821675" />
+    <state width="977" height="304" key="GridCell.Tab.0.right" timestamp="1621057821675">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="977" height="304" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1620997737270" />
+    <state width="977" height="304" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1621057821675" />
     <state width="978" height="178" key="GridCell.Tab.1.bottom" timestamp="1620895808714">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -276,14 +186,14 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="1172" y="461" key="com.intellij.ide.util.TipDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1620894661288" />
-    <state x="109" y="364" key="new project wizard" timestamp="1620997126909">
+    <state x="137" y="213" key="new project wizard" timestamp="1621056878822">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="109" y="364" key="new project wizard/0.0.2048.1112@0.0.2048.1112" timestamp="1620997126909" />
-    <state x="1204" y="240" key="spring file set editor" timestamp="1620997205618">
+    <state x="137" y="213" key="new project wizard/0.0.2048.1112@0.0.2048.1112" timestamp="1621056878822" />
+    <state x="1204" y="240" key="spring file set editor" timestamp="1621056997564">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="1204" y="240" key="spring file set editor/0.0.2048.1112@0.0.2048.1112" timestamp="1620997205618" />
+    <state x="1204" y="240" key="spring file set editor/0.0.2048.1112@0.0.2048.1112" timestamp="1621056997564" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
