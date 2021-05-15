@@ -30,6 +30,10 @@ spring-01和spring-02 IOC容器的理解：https://blog.csdn.net/Doraemon_Nobita
 <br>
 spring-03 Spring容器是如何创建对象的：https://blog.csdn.net/Doraemon_Nobita/article/details/116757735
 <br>
-spring-04 Spring常用配置内容：https://blog.csdn.net/Doraemon_Nobita/article/details/116804011?spm=1001.2014.3001.5501
+spring-04 Spring常用配置内容：https://blog.csdn.net/Doraemon_Nobita/article/details/116804011
 <br>
-spring-05 Spring DI依赖注入：https://blog.csdn.net/Doraemon_Nobita/article/details/116806300?spm=1001.2014.3001.5501
+spring-05和spring-06 Spring DI依赖注入：https://blog.csdn.net/Doraemon_Nobita/article/details/116806300
+<br>
+spring-07 自动装配：https://blog.csdn.net/Doraemon_Nobita/article/details/116847422
+<br>
+spring-08和spring-09 spring ioc中的注解开发：https://blog.csdn.net/Doraemon_Nobita/article/details/116851763
