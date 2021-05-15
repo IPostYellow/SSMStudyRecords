@@ -8,6 +8,17 @@
       <change afterPath="$PROJECT_DIR$/spring-07-AutoWired/src/main/java/com/hj/pojo/Person.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/spring-07-AutoWired/src/main/resources/beans.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/spring-07-AutoWired/src/test/java/MyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-08-annotations/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-08-annotations/src/main/java/com/hj/pojo/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-08-annotations/src/main/java/com/hj/pojo/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-08-annotations/src/main/java/com/hj/pojo/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-08-annotations/src/main/java/com/hj/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-08-annotations/src/main/resources/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-08-annotations/src/test/java/MyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-09-appconfig/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-09-appconfig/src/main/java/config/MyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-09-appconfig/src/main/java/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-09-appconfig/src/test/java/MyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -64,6 +75,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-09-appconfig/src/main/java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -71,20 +83,25 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="com.hj.pojo" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\硕士毕业计划\java学习\SpringStudy\spring-09-appconfig\src\main\java" />
+      <recent name="E:\硕士毕业计划\java学习\SpringStudy\spring-08-annotations\src\main\java\com\hj\pojo" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.MyTest">
-    <configuration name="MyTest (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.MyTest (2)">
+    <configuration name="MyTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <module name="spring-03-ioc2" />
+      <module name="spring-08-annotations" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTest (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="MyTest (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <module name="spring-04-Configuration" />
+      <module name="spring-09-appconfig" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -112,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyTest (2)" />
+        <item itemvalue="Application.MyTest (1)" />
         <item itemvalue="Application.MyTest" />
         <item itemvalue="Application.MyTest (5)" />
         <item itemvalue="Application.MyTest (4)" />
-        <item itemvalue="Application.MyTest (3)" />
-        <item itemvalue="Application.MyTest (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +148,7 @@
       <option name="presentableId" value="Default" />
       <updated>1620715822008</updated>
       <workItem from="1620715824022" duration="6388000" />
-      <workItem from="1620893816752" duration="14563000" />
+      <workItem from="1620893816752" duration="19344000" />
     </task>
     <servers />
   </component>
@@ -146,26 +163,26 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="1129" y="218" key="#Project_Structure/0.0.2048.1112@0.0.2048.1112" timestamp="1620716007257" />
-    <state x="1332" y="275" key="#com.intellij.ide.util.MemberChooser" timestamp="1621056967196">
+    <state x="1332" y="275" key="#com.intellij.ide.util.MemberChooser" timestamp="1621063582109">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="1332" y="275" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1112@0.0.2048.1112" timestamp="1621056967196" />
-    <state width="977" height="304" key="GridCell.Tab.0.bottom" timestamp="1621057821675">
+    <state x="1332" y="275" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1112@0.0.2048.1112" timestamp="1621063582109" />
+    <state width="977" height="304" key="GridCell.Tab.0.bottom" timestamp="1621063749853">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="977" height="304" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1621057821675" />
-    <state width="977" height="304" key="GridCell.Tab.0.center" timestamp="1621057821675">
+    <state width="977" height="304" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1621063749853" />
+    <state width="977" height="304" key="GridCell.Tab.0.center" timestamp="1621063749852">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="977" height="304" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1621057821675" />
-    <state width="977" height="304" key="GridCell.Tab.0.left" timestamp="1621057821675">
+    <state width="977" height="304" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1621063749852" />
+    <state width="977" height="304" key="GridCell.Tab.0.left" timestamp="1621063749852">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="977" height="304" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1621057821675" />
-    <state width="977" height="304" key="GridCell.Tab.0.right" timestamp="1621057821675">
+    <state width="977" height="304" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1621063749852" />
+    <state width="977" height="304" key="GridCell.Tab.0.right" timestamp="1621063749852">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="977" height="304" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1621057821675" />
+    <state width="977" height="304" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1621063749852" />
     <state width="978" height="178" key="GridCell.Tab.1.bottom" timestamp="1620895808714">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -186,14 +203,14 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="1172" y="461" key="com.intellij.ide.util.TipDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1620894661288" />
-    <state x="137" y="213" key="new project wizard" timestamp="1621056878822">
+    <state x="188" y="36" key="new project wizard" timestamp="1621063418484">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="137" y="213" key="new project wizard/0.0.2048.1112@0.0.2048.1112" timestamp="1621056878822" />
-    <state x="1204" y="240" key="spring file set editor" timestamp="1621056997564">
+    <state x="188" y="36" key="new project wizard/0.0.2048.1112@0.0.2048.1112" timestamp="1621063418484" />
+    <state x="1204" y="240" key="spring file set editor" timestamp="1621058789514">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="1204" y="240" key="spring file set editor/0.0.2048.1112@0.0.2048.1112" timestamp="1621056997564" />
+    <state x="1204" y="240" key="spring file set editor/0.0.2048.1112@0.0.2048.1112" timestamp="1621058789514" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

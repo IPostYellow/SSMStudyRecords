@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--扫描com.hj.pojo下的component组件-->
+    <context:component-scan base-package="com.hj.pojo"/>
+    <!--开启注解的支持-->
+    <context:annotation-config/>
+    <bean id="cat" class="com.hj.pojo.Cat"/>
+    <bean id="dog" class="com.hj.pojo.Dog"/>
+    <bean id="person" class="com.hj.pojo.Person"/>
+</beans>

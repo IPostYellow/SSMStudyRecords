@@ -16,6 +16,8 @@
         <module>spring-05-DI</module>
         <module><![CDATA[spring-06-DI(p&c)]]></module>
         <module>spring-07-AutoWired</module>
+        <module>spring-08-annotations</module>
+        <module>spring-09-appconfig</module>
     </modules>
 
     <dependencies>
