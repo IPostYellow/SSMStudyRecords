@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--方式一：使用原生spring API接口实现-->
+    <!--注册bean-->
+    <bean id="userService" class="com.hj.service.UserServiceImpl"/>
+    <bean id="beforelog" class="com.hj.log.beforeLog"/>
+    <bean id="afterlog" class="com.hj.log.afterLog"/>
+    <!--配置aop-->
+    <aop:config>
+        <!--切入点: expression:表达式，execution(要执行的位置！,
+        比如这个例子就是在UserServiceImpl的*所有方法（增删改查）都可以执行)-->
+        <aop:pointcut id="pointcut" expression="execution(* com.hj.service.UserServiceImpl.*(..))"/>
+
+        <!--配置通知-->
+        <aop:advisor advice-ref="beforelog" pointcut-ref="pointcut"/>
+        <aop:advisor advice-ref="afterlog" pointcut-ref="pointcut"/>
+    </aop:config>
+
+    <!--方式二：自定义类实现-->
+    <bean id="diy" class="com.hj.diy.MyClass"/>
+    <aop:config>
+        <!--自定义切面，ref要引用的类-->
+        <aop:aspect ref="diy">
+            <!--切入点: expression:表达式，execution(要执行的位置！,
+            比如这个例子就是在UserServiceImpl的*所有方法（增删改查）都可以执行)-->
+            <aop:pointcut id="point" expression="execution(* com.hj.service.UserServiceImpl.*(..))"/>
+            <!--配置通知-->
+            <aop:before method="before" pointcut-ref="point"/>
+            <aop:after method="after" pointcut-ref="point"/>
+        </aop:aspect>
+    </aop:config>
+
+    <!--方式三：注解实现（在AnnotationPointCut类里实现了）-->
+    <!--扫描com.hj.pojo下的component组件-->
+    <context:component-scan base-package="com.hj.diy"/>
+    <!--开启注解的支持-->
+    <context:annotation-config/>
+    <!--aop自动代理-->
+    <aop:aspectj-autoproxy/>
+</beans>
