@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--DataSource:使用spring的数据源替换mybatis的配置 c3p0 dbcp druid
+    我们这里使用spring提供的jdbc
+    有了这段后，可以把mybatis-config.xml里的environments标签以及内容都删除
+    -->
+    <bean id="datasource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url"
+                  value="jdbc:mysql://localhost:3306/mybatis?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8"/>
+        <property name="username" value="root"/>
+        <property name="password" value="root"/>
+    </bean>
+
+    <!--sqlSessionFactory-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="datasource"/>
+        <!--绑定mybatis配置文件,这里可以写mybatis-config.xml里的内容，包括起别名等等-->
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+        <!--有了这段后，可以把mybatis-config.xml里的mapper标签以及内容都删除-->
+        <property name="mapperLocations" value="classpath:com/hj/mapper/*.xml"/>
+    </bean>
+    <!--这就是mybatis里的sqlSession，有了以后就不需要自己再去new sqlSession对象了-->
+    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+        <!--这里只能用构造器注入sqlSessionFatory，因为源码里没有set方法，但有构造方法-->
+        <constructor-arg index="0" ref="sqlSessionFactory"/>
+    </bean>
+
+    <!--我们把UserMapper的实现类也放到spring中管理，这样直接使用就好了-->
+    <bean id="userMapper" class="com.hj.mapper.UserMapperImpl">
+        <property name="sqlSession" ref="sqlSession"/>
+    </bean>
+
+    <bean id="userMapper2" class="com.hj.mapper.UserMapperImpl2">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
+
+</beans>
