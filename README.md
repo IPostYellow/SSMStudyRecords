@@ -39,3 +39,5 @@ spring-07 自动装配：https://blog.csdn.net/Doraemon_Nobita/article/details/1
 spring-08和spring-09 spring ioc中的注解开发：https://blog.csdn.net/Doraemon_Nobita/article/details/116851763
 <br>
 spring-10 spring aop：https://blog.csdn.net/Doraemon_Nobita/article/details/116893757
+<br>
+spring-11 spring整合mybatis：https://blog.csdn.net/Doraemon_Nobita/article/details/116999839
