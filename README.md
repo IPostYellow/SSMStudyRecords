@@ -37,3 +37,5 @@ spring-05和spring-06 Spring DI依赖注入：https://blog.csdn.net/Doraemon_Nob
 spring-07 自动装配：https://blog.csdn.net/Doraemon_Nobita/article/details/116847422
 <br>
 spring-08和spring-09 spring ioc中的注解开发：https://blog.csdn.net/Doraemon_Nobita/article/details/116851763
+<br>
+spring-10 spring aop：https://blog.csdn.net/Doraemon_Nobita/article/details/116893757
