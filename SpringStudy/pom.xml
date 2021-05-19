@@ -20,6 +20,7 @@
         <module>spring-09-appconfig</module>
         <module>spring-10-aop</module>
         <module>spring-11-mybatis</module>
+        <module>spring-11-transaction</module>
     </modules>
 
     <dependencies>

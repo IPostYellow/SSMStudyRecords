@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/tx
+        https://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!--DataSource:使用spring的数据源替换mybatis的配置 c3p0 dbcp druid
+    我们这里使用spring提供的jdbc
+    有了这段后，可以把mybatis-config.xml里的environments标签以及内容都删除
+    -->
+    <bean id="datasource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url"
+                  value="jdbc:mysql://localhost:3306/mybatis?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8"/>
+        <property name="username" value="root"/>
+        <property name="password" value="root"/>
+    </bean>
+
+    <!--sqlSessionFactory-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="datasource"/>
+        <!--有了这段后，可以把mybatis-config.xml里的mapper标签以及内容都删除-->
+        <property name="mapperLocations" value="classpath:com/hj/mapper/*.xml"/>
+    </bean>
+    <!--这就是mybatis里的sqlSession，有了以后就不需要自己再去new sqlSession对象了-->
+    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+        <!--这里只能用构造器注入sqlSessionFatory，因为源码里没有set方法，但有构造方法-->
+        <constructor-arg index="0" ref="sqlSessionFactory"/>
+    </bean>
+
+    <bean id="userMapperImpl" class="com.hj.mapper.UserMapperImpl">
+        <constructor-arg name="sqlSessionTemplate" ref="sqlSession"/>
+    </bean>
+
+    <!--配置声明式事务-->
+    <!--或者直接    <tx:jta-transaction-manager /> 也可以-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="datasource"/>
+    </bean>
+<!--    &lt;!&ndash;结合aop实现事务的织入&ndash;&gt;-->
+<!--    &lt;!&ndash;配置事务通知&ndash;&gt;-->
+<!--    <tx:advice id="txAdvice" transaction-manager="transactionManager">-->
+<!--        &lt;!&ndash;给哪些方法配置事务&ndash;&gt;-->
+<!--        &lt;!&ndash;配置事务的传播特性 propagation 默认是REQUIRED&ndash;&gt;-->
+<!--        <tx:attributes>-->
+<!--            <tx:method name="transactionTest" propagation="REQUIRED"/>-->
+<!--        </tx:attributes>-->
+<!--    </tx:advice>-->
+<!--    &lt;!&ndash;配置事务切入&ndash;&gt;-->
+<!--    <aop:config>-->
+<!--        <aop:pointcut id="txPointCut" expression="execution(* com.hj.mapper.*.*(..))"/>-->
+<!--        <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointCut"/>-->
+<!--    </aop:config>-->
+
+    <!--编程式配置事务-->
+    <bean id="userMapperImpl2" class="com.hj.mapper.UserMapperImpl2">
+        <constructor-arg name="sqlSessionTemplate" ref="sqlSession"/>
+        <constructor-arg name="transactionManager" ref="transactionManager"/>
+    </bean>
+
+
+</beans>
